@@ -25,3 +25,8 @@ Add this line in to your `Podfile` you should use direct link to pod spec versio
 
 1. update pod
 2. push podspec `pod trunk push Specs/PaymentResources/2.0.0/PaymentResources.podspec`
+3. If necessary use `--allow-warnings` tag when pushing the podspec
+
+## Known issues
+
+1. If linting fails with the error: `SDK does not contain 'libarclite' at the path ...` - check the `platform` field or remove it completely
