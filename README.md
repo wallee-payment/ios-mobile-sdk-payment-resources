@@ -30,3 +30,5 @@ Add this line in to your `Podfile` you should use direct link to pod spec versio
 ## Known issues
 
 1. If linting fails with the error: `SDK does not contain 'libarclite' at the path ...` - check the `platform` field or remove it completely
+   - or use this flags: `--skip-import-validation --allow-warnings`
+   - `pod trunk push Specs/PaymentResources/5.0.0/PaymentResources.podspec --skip-import-validation --allow-warnings`
